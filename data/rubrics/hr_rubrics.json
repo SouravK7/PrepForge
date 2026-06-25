@@ -1,0 +1,68 @@
+{
+  "version": "v1",
+  "rubrics": [
+    {
+      "id": "rubric_hr_standard",
+      "name": "Standard HR Question Rubric",
+      "rubric_type": "hr",
+      "description": "Applied to all HR and behavioral interview questions. Communication and evidence are weighted higher because delivery and specificity matter more than technical accuracy.",
+      "criteria": [
+        {
+          "name": "Semantic Relevance",
+          "weight": 0.25,
+          "description": "How directly the answer addresses what the HR question is asking.",
+          "scoring_guide": {
+            "0-25": "Answer does not address the question or goes completely off-topic.",
+            "26-50": "Answer partially addresses the question but misses the core intent.",
+            "51-75": "Answer addresses the question adequately but could be more focused.",
+            "76-100": "Answer directly and fully addresses exactly what the question is asking."
+          }
+        },
+        {
+          "name": "Communication Quality",
+          "weight": 0.25,
+          "description": "Clarity, structure, confidence, and professionalism of the response.",
+          "scoring_guide": {
+            "0-25": "Unclear, disorganized, or unprofessional response.",
+            "26-50": "Some clarity but lacks structure or professional tone.",
+            "51-75": "Clear and professional with reasonable structure.",
+            "76-100": "Excellent structure, confident tone, very clear and professional delivery."
+          }
+        },
+        {
+          "name": "Evidence and Specificity",
+          "weight": 0.25,
+          "description": "Whether the answer includes specific situations, projects, or measurable outcomes (STAR method).",
+          "scoring_guide": {
+            "0-25": "No specific details. Generic or vague statements only.",
+            "26-50": "Some specifics but lacking context or outcome.",
+            "51-75": "Good specifics with situation and action but outcome may be unclear.",
+            "76-100": "Excellent specificity with clear situation, action taken, and measurable result."
+          }
+        },
+        {
+          "name": "Reasoning and Self-Awareness",
+          "weight": 0.15,
+          "description": "Depth of self-reflection and logical reasoning behind choices and experiences.",
+          "scoring_guide": {
+            "0-25": "No reflection or reasoning. Pure statement of facts.",
+            "26-50": "Some reasoning but superficial.",
+            "51-75": "Good reasoning with some reflection on learning or growth.",
+            "76-100": "Deep self-awareness with clear reasoning about decisions and what was learned."
+          }
+        },
+        {
+          "name": "Concept Coverage",
+          "weight": 0.10,
+          "description": "Coverage of expected themes for this type of HR question.",
+          "scoring_guide": {
+            "0-25": "Major expected themes entirely absent.",
+            "26-50": "Some expected themes present but others missing.",
+            "51-75": "Most expected themes covered.",
+            "76-100": "All expected themes covered with additional depth."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "version": "v1",
+  "rubrics": [
+    {
+      "id": "rubric_technical_standard",
+      "name": "Standard Technical Question Rubric",
+      "rubric_type": "technical",
+      "description": "Applied to all technical interview questions. Weights concept coverage highest because technical accuracy is the primary concern.",
+      "criteria": [
+        {
+          "name": "Concept Coverage",
+          "weight": 0.35,
+          "description": "How many of the required technical concepts were correctly mentioned and explained.",
+          "scoring_guide": {
+            "0-25": "None or very few required concepts mentioned. Answer appears to be guessing or is entirely off-topic.",
+            "26-50": "Some required concepts mentioned but major concepts are missing or incorrectly described.",
+            "51-75": "Most required concepts mentioned but one or two important ones are missing or insufficiently explained.",
+            "76-100": "All or nearly all required concepts mentioned with correct explanations. Optional bonus concepts may also be present."
+          }
+        },
+        {
+          "name": "Semantic Relevance",
+          "weight": 0.20,
+          "description": "How closely the overall meaning and direction of the answer aligns with the expected answer.",
+          "scoring_guide": {
+            "0-25": "Answer is largely irrelevant or answers a different question entirely.",
+            "26-50": "Answer is tangentially related but misses the main point.",
+            "51-75": "Answer is relevant and addresses the question but misses some important nuances.",
+            "76-100": "Answer is highly relevant and aligns closely with the expected response in both content and direction."
+          }
+        },
+        {
+          "name": "Reasoning Depth",
+          "weight": 0.20,
+          "description": "How deeply the candidate explains the why and how behind their answer, not just the what.",
+          "scoring_guide": {
+            "0-25": "Answer states facts or keywords with no explanation of why or how.",
+            "26-50": "Some causal explanation present but mostly surface-level statements.",
+            "51-75": "Good explanatory depth with some causal or comparative reasoning.",
+            "76-100": "Excellent depth with strong causal reasoning, comparative analysis, or internal system explanation."
+          }
+        },
+        {
+          "name": "Evidence and Examples",
+          "weight": 0.15,
+          "description": "Whether the candidate provided concrete real-world examples or specific technology references.",
+          "scoring_guide": {
+            "0-25": "No examples or references. Purely theoretical or abstract.",
+            "26-50": "Vague reference to examples without specifics.",
+            "51-75": "At least one concrete example or technology reference provided.",
+            "76-100": "Multiple specific examples with real-world context demonstrating practical experience."
+          }
+        },
+        {
+          "name": "Communication Quality",
+          "weight": 0.10,
+          "description": "Clarity of explanation, sentence structure, grammar, and appropriate use of technical vocabulary.",
+          "scoring_guide": {
+            "0-25": "Very difficult to understand. Poor grammar, incoherent structure.",
+            "26-50": "Understandable but poorly organized with noticeable grammar issues.",
+            "51-75": "Clear and readable with minor structural issues.",
+            "76-100": "Excellent clarity, well-structured, appropriate technical vocabulary, easy to follow."
+          }
+        }
+      ]
+    }
+  ]
+}

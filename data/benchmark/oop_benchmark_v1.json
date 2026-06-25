@@ -1,0 +1,67 @@
+{
+  "benchmark_name": "OOP Benchmark v1",
+  "version": "v1",
+  "question_id": "q_se_oop_001",
+  "competency_id": "comp_se_oop",
+  "question_text": "Explain the four pillars of Object Oriented Programming.",
+  "required_concepts": ["encapsulation", "inheritance", "polymorphism", "abstraction"],
+  "sample_answer": "The four pillars of Object Oriented Programming are Encapsulation, Inheritance, Polymorphism, and Abstraction. Encapsulation bundles data and methods within a class and restricts direct access to internal state. Inheritance allows a child class to acquire properties and methods from a parent class, enabling code reuse. Polymorphism allows the same method or interface to behave differently depending on the object type. Abstraction hides implementation complexity and exposes only the necessary interface to the user.",
+  "answers": [
+    {
+      "id": "bench_oop_excellent_01",
+      "answer_type": "excellent",
+      "answer_text": "The four pillars of Object Oriented Programming are Encapsulation, Inheritance, Polymorphism, and Abstraction. Encapsulation bundles data and methods together inside a class, restricting direct access to the internal state through access modifiers like private and protected. This ensures data integrity because external code cannot accidentally corrupt the object's internal data. Inheritance enables a child class to extend a parent class, inheriting its properties and methods, which promotes code reuse. For example, in Python I used inheritance to create a Shape base class with Circle and Rectangle subclasses. Polymorphism allows objects of different types to be treated uniformly through a shared interface. This means the same method call can behave differently depending on the actual object type. Abstraction hides implementation details and exposes only the essential interface. For instance, when I call list.sort() in Python I don't need to know whether it uses TimSort internally. These four pillars together enable modular, maintainable, and extensible software design.",
+      "human_score": 92,
+      "annotator_notes": "Complete coverage of all four concepts with clear explanations, real-world examples, and good causal reasoning."
+    },
+    {
+      "id": "bench_oop_good_01",
+      "answer_type": "good",
+      "answer_text": "The four pillars of OOP are encapsulation, inheritance, polymorphism, and abstraction. Encapsulation means keeping data and methods together in a class and controlling access. Inheritance lets a class inherit from another class to reuse code. Polymorphism means the same method can work differently for different classes. Abstraction means hiding complexity and showing only what is needed. These concepts help make code more organized and reusable.",
+      "human_score": 72,
+      "annotator_notes": "All four concepts mentioned with brief correct explanations. Lacks depth, examples, and causal reasoning. No real-world application."
+    },
+    {
+      "id": "bench_oop_average_01",
+      "answer_type": "average",
+      "answer_text": "OOP has four pillars. Encapsulation is about wrapping data. Inheritance lets you reuse code from parent classes. Polymorphism is when methods behave differently. I think abstraction is about hiding details. OOP makes code better.",
+      "human_score": 48,
+      "annotator_notes": "Mentions all four keywords but explanations are vague and incomplete. No examples, no depth. Shows basic recall but not understanding."
+    },
+    {
+      "id": "bench_oop_poor_01",
+      "answer_type": "poor",
+      "answer_text": "OOP is a programming paradigm that uses objects. It is used in languages like Java and Python.",
+      "human_score": 15,
+      "annotator_notes": "Does not address any of the four pillars. No required concepts covered. Generic statement that could apply to many questions."
+    },
+    {
+      "id": "bench_oop_excellent_02",
+      "answer_type": "excellent",
+      "answer_text": "Object Oriented Programming is built on four fundamental pillars. First, Encapsulation binds data and the methods that operate on that data into a single unit called a class, and controls access through access modifiers. This prevents unintended interference because external code cannot directly modify internal state. Second, Inheritance establishes a parent-child relationship between classes, allowing the child to reuse and extend the parent's functionality. This reduces code duplication because common behavior is defined once in the parent. Third, Polymorphism enables objects of different classes to respond to the same method call in different ways. For example, a draw() method on a Circle draws a circle, while the same draw() on a Rectangle draws a rectangle. This is powerful because it allows writing generic code that works with any shape. Fourth, Abstraction simplifies complex systems by exposing only the essential interface. For example, I used abstract base classes in Python to define a PaymentProcessor interface that different payment gateways implement differently. Together these principles produce code that is modular, testable, and maintainable.",
+      "human_score": 95,
+      "annotator_notes": "Outstanding answer with all concepts, clear structure using numbered points, concrete examples, causal reasoning throughout, and practical experience reference."
+    },
+    {
+      "id": "bench_oop_good_02",
+      "answer_type": "good",
+      "answer_text": "The four pillars are encapsulation, inheritance, polymorphism, and abstraction. Encapsulation keeps data safe inside objects using private variables. Inheritance allows creating new classes based on existing ones. Polymorphism lets different objects respond to the same method differently. For instance, different animal classes could each have their own speak method. Abstraction hides unnecessary details from the user.",
+      "human_score": 68,
+      "annotator_notes": "All concepts present with mostly correct explanations. One example given. Lacks depth on why these matter and missing causal connectors."
+    },
+    {
+      "id": "bench_oop_average_02",
+      "answer_type": "average",
+      "answer_text": "OOP stands for Object Oriented Programming. The main ideas are encapsulation which means putting things together, inheritance which means getting properties from parent, and polymorphism. I forgot what abstraction exactly means but I think it is about simplifying things.",
+      "human_score": 38,
+      "annotator_notes": "Three of four concepts mentioned but with weak explanations. Abstraction not explained. Shows partial recall with honesty about gaps. No examples."
+    },
+    {
+      "id": "bench_oop_poor_02",
+      "answer_type": "poor",
+      "answer_text": "I have used classes and objects in my programming. OOP is when you use classes to organize code. It is better than procedural programming.",
+      "human_score": 12,
+      "annotator_notes": "No pillars mentioned at all. Answer is about OOP in general but does not address the specific question. Very low relevance."
+    }
+  ]
+}

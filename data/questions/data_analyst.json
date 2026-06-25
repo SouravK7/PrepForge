@@ -1,0 +1,51 @@
+{
+  "role": "Data Analyst",
+  "version": "v1",
+  "questions": [
+    {
+      "id": "q_da_sql_001",
+      "competency_id": "comp_da_sql",
+      "question_text": "Explain the different types of SQL JOINs and when to use each.",
+      "question_type": "technical",
+      "difficulty": "intermediate",
+      "elo_difficulty": 1200.0,
+      "category": "SQL",
+      "required_concepts": ["INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "FULL OUTER JOIN", "matching rows"],
+      "optional_concepts": ["CROSS JOIN", "self join", "performance"],
+      "sample_answer": "SQL JOINs combine rows from two or more tables. INNER JOIN returns only rows where there is a match in both tables. LEFT JOIN returns all rows from the left table and matching rows from the right table, with NULLs for no match. RIGHT JOIN returns all rows from the right table and matching rows from the left. FULL OUTER JOIN returns all rows from both tables with NULLs where there is no match. CROSS JOIN returns the cartesian product of both tables. INNER JOIN is used when you only want matching records, LEFT JOIN when you want all records from the primary table regardless of whether a match exists in the secondary table.",
+      "rubric_id": "rubric_technical_standard",
+      "follow_up_hints": ["How would you find customers with no orders using a JOIN?", "What is a self join and when would you use it?"],
+      "role_tags": ["Data Analyst", "Software Engineer"]
+    },
+    {
+      "id": "q_da_stats_001",
+      "competency_id": "comp_da_statistics",
+      "question_text": "What is the difference between mean, median, and mode? When would you use each?",
+      "question_type": "technical",
+      "difficulty": "beginner",
+      "elo_difficulty": 900.0,
+      "category": "Statistics",
+      "required_concepts": ["mean", "median", "mode", "average", "central tendency", "outlier"],
+      "optional_concepts": ["skewed distribution", "normal distribution", "robust"],
+      "sample_answer": "Mean is the arithmetic average of all values, calculated by summing all values and dividing by the count. It is sensitive to outliers. Median is the middle value when data is sorted, making it robust to outliers. Mode is the most frequently occurring value, useful for categorical data. Use mean when data is normally distributed without extreme outliers. Use median when data is skewed or contains outliers, for example house prices or incomes. Use mode for categorical data or when you want to know the most common category.",
+      "rubric_id": "rubric_technical_standard",
+      "follow_up_hints": ["How would you handle outliers in a dataset?", "What is the difference between variance and standard deviation?"],
+      "role_tags": ["Data Analyst", "AI Engineer"]
+    },
+    {
+      "id": "q_da_eda_001",
+      "competency_id": "comp_da_eda",
+      "question_text": "Describe your process for performing Exploratory Data Analysis on a new dataset.",
+      "question_type": "technical",
+      "difficulty": "intermediate",
+      "elo_difficulty": 1100.0,
+      "category": "EDA",
+      "required_concepts": ["distribution", "missing values", "outlier", "correlation", "visualization", "data cleaning"],
+      "optional_concepts": ["pandas", "describe", "heatmap", "skewness"],
+      "sample_answer": "My EDA process starts with understanding the data shape and types using shape, dtypes and head in pandas. I then check for missing values and decide how to handle them through imputation or removal. I examine distributions of numerical variables using histograms and boxplots to detect skewness and outliers. I check correlations between variables using a correlation matrix and heatmap. For categorical variables I analyze value counts and distributions. I then generate hypotheses about relationships and patterns. Finally I document findings and anomalies before proceeding to modeling.",
+      "rubric_id": "rubric_technical_standard",
+      "follow_up_hints": ["How do you handle missing data?", "What tools do you use for visualization?"],
+      "role_tags": ["Data Analyst", "AI Engineer"]
+    }
+  ]
+}

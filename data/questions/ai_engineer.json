@@ -1,0 +1,51 @@
+{
+  "role": "AI Engineer",
+  "version": "v1",
+  "questions": [
+    {
+      "id": "q_ai_ml_001",
+      "competency_id": "comp_ai_ml_fundamentals",
+      "question_text": "What is the difference between supervised and unsupervised learning?",
+      "question_type": "technical",
+      "difficulty": "beginner",
+      "elo_difficulty": 1000.0,
+      "category": "Machine Learning",
+      "required_concepts": ["supervised learning", "unsupervised learning", "labeled data", "classification", "regression", "clustering"],
+      "optional_concepts": ["semi-supervised", "reinforcement learning", "feature engineering"],
+      "sample_answer": "Supervised learning uses labeled training data where each example has an input and a correct output. The model learns to map inputs to outputs. Common tasks include classification (predicting categories) and regression (predicting continuous values). Unsupervised learning uses unlabeled data and the model finds patterns or structure without explicit guidance. Common tasks include clustering (grouping similar data) and dimensionality reduction. Supervised learning requires labeled data which can be expensive to obtain, while unsupervised learning can work with raw data but results are harder to evaluate.",
+      "rubric_id": "rubric_technical_standard",
+      "follow_up_hints": ["What is semi-supervised learning?", "Give an example of a real-world supervised learning problem."],
+      "role_tags": ["AI Engineer", "Data Analyst"]
+    },
+    {
+      "id": "q_ai_overfit_001",
+      "competency_id": "comp_ai_overfitting",
+      "question_text": "What is overfitting and what techniques can you use to prevent it?",
+      "question_type": "technical",
+      "difficulty": "intermediate",
+      "elo_difficulty": 1300.0,
+      "category": "Machine Learning",
+      "required_concepts": ["overfitting", "underfitting", "regularization", "cross-validation", "dropout", "training data", "generalization"],
+      "optional_concepts": ["L1", "L2", "early stopping", "data augmentation", "ensemble"],
+      "sample_answer": "Overfitting occurs when a model learns the training data too well, including noise and random fluctuations, resulting in poor generalization to new unseen data. The model has high training accuracy but low validation accuracy. Prevention techniques include: Regularization (L1/L2) which adds a penalty to large weights to keep the model simpler. Dropout which randomly deactivates neurons during training to prevent co-adaptation. Cross-validation which evaluates the model on multiple data splits to detect overfitting early. Early stopping which stops training when validation loss stops improving. Data augmentation which artificially increases training data diversity.",
+      "rubric_id": "rubric_technical_standard",
+      "follow_up_hints": ["What is the bias-variance tradeoff?", "How do you know if your model is underfitting?"],
+      "role_tags": ["AI Engineer", "Data Analyst"]
+    },
+    {
+      "id": "q_ai_eval_001",
+      "competency_id": "comp_ai_model_evaluation",
+      "question_text": "Explain precision, recall, and F1 score. When would you prioritize recall over precision?",
+      "question_type": "technical",
+      "difficulty": "intermediate",
+      "elo_difficulty": 1200.0,
+      "category": "Model Evaluation",
+      "required_concepts": ["precision", "recall", "F1 score", "true positive", "false positive", "false negative", "confusion matrix"],
+      "optional_concepts": ["ROC", "AUC", "threshold", "class imbalance"],
+      "sample_answer": "Precision measures how many of the predicted positives are actually positive: TP/(TP+FP). It answers 'of all the items we flagged as positive, how many are actually positive'. Recall measures how many of the actual positives were correctly identified: TP/(TP+FN). It answers 'of all actual positives, how many did we catch'. F1 score is the harmonic mean of precision and recall, balancing both metrics. You prioritize recall when missing a positive is very costly, for example in medical diagnosis where missing a disease is worse than a false alarm. You prioritize precision when false positives are costly, for example in spam detection where legitimate emails being flagged as spam is more harmful.",
+      "rubric_id": "rubric_technical_standard",
+      "follow_up_hints": ["What is the ROC curve and how do you interpret AUC?", "How do you handle class imbalance?"],
+      "role_tags": ["AI Engineer", "Data Analyst"]
+    }
+  ]
+}

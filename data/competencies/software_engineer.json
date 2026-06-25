@@ -1,0 +1,230 @@
+{
+  "role": "Software Engineer",
+  "version": "v1",
+  "competencies": [
+    {
+      "id": "comp_se_oop",
+      "name": "Object Oriented Programming",
+      "description": "Understanding and applying OOP principles including the four pillars and their practical use in software design.",
+      "parent_id": "comp_se_programming",
+      "children": [
+        "comp_se_oop_classes",
+        "comp_se_oop_inheritance",
+        "comp_se_oop_polymorphism",
+        "comp_se_oop_encapsulation"
+      ],
+      "role_relevance": {
+        "Software Engineer": 0.95,
+        "Data Analyst": 0.50,
+        "AI Engineer": 0.80
+      },
+      "difficulty_level": "intermediate",
+      "required_concepts": [
+        "encapsulation",
+        "inheritance",
+        "polymorphism",
+        "abstraction",
+        "class",
+        "object"
+      ],
+      "related_resources": [
+        "res_python_oop",
+        "res_design_patterns"
+      ],
+      "elo_rating": 1200.0
+    },
+    {
+      "id": "comp_se_data_structures",
+      "name": "Data Structures",
+      "description": "Knowledge of fundamental data structures and their time and space complexity tradeoffs.",
+      "parent_id": "comp_se_programming",
+      "children": [
+        "comp_se_ds_arrays",
+        "comp_se_ds_linked_lists",
+        "comp_se_ds_trees",
+        "comp_se_ds_hashmaps"
+      ],
+      "role_relevance": {
+        "Software Engineer": 0.95,
+        "Data Analyst": 0.40,
+        "AI Engineer": 0.70
+      },
+      "difficulty_level": "intermediate",
+      "required_concepts": [
+        "array",
+        "linked list",
+        "tree",
+        "hash map",
+        "stack",
+        "queue",
+        "time complexity",
+        "space complexity"
+      ],
+      "related_resources": [
+        "res_dsa_course",
+        "res_leetcode"
+      ],
+      "elo_rating": 1200.0
+    },
+    {
+      "id": "comp_se_algorithms",
+      "name": "Algorithms and Complexity",
+      "description": "Understanding of sorting, searching, and graph algorithms and Big O notation.",
+      "parent_id": "comp_se_programming",
+      "children": [],
+      "role_relevance": {
+        "Software Engineer": 0.90,
+        "Data Analyst": 0.35,
+        "AI Engineer": 0.75
+      },
+      "difficulty_level": "intermediate",
+      "required_concepts": [
+        "Big O",
+        "time complexity",
+        "sorting",
+        "searching",
+        "recursion",
+        "dynamic programming"
+      ],
+      "related_resources": [
+        "res_dsa_course",
+        "res_leetcode"
+      ],
+      "elo_rating": 1300.0
+    },
+    {
+      "id": "comp_se_databases",
+      "name": "Database Systems",
+      "description": "Understanding of relational databases, SQL, normalization, and database design.",
+      "parent_id": "comp_se_backend",
+      "children": [
+        "comp_se_db_sql",
+        "comp_se_db_normalization",
+        "comp_se_db_design"
+      ],
+      "role_relevance": {
+        "Software Engineer": 0.90,
+        "Data Analyst": 0.95,
+        "AI Engineer": 0.65
+      },
+      "difficulty_level": "intermediate",
+      "required_concepts": [
+        "SQL",
+        "JOIN",
+        "normalization",
+        "primary key",
+        "foreign key",
+        "index",
+        "ACID",
+        "transaction"
+      ],
+      "related_resources": [
+        "res_sql_course",
+        "res_database_design"
+      ],
+      "elo_rating": 1200.0
+    },
+    {
+      "id": "comp_se_system_design",
+      "name": "System Design",
+      "description": "Ability to design scalable, reliable distributed systems and explain architectural decisions.",
+      "parent_id": "comp_se_architecture",
+      "children": [],
+      "role_relevance": {
+        "Software Engineer": 0.85,
+        "Data Analyst": 0.20,
+        "AI Engineer": 0.70
+      },
+      "difficulty_level": "advanced",
+      "required_concepts": [
+        "scalability",
+        "load balancer",
+        "caching",
+        "database sharding",
+        "microservices",
+        "API gateway",
+        "CAP theorem"
+      ],
+      "related_resources": [
+        "res_system_design"
+      ],
+      "elo_rating": 1500.0
+    },
+    {
+      "id": "comp_se_rest_api",
+      "name": "REST API Design",
+      "description": "Understanding of REST principles and HTTP methods for API design.",
+      "parent_id": "comp_se_backend",
+      "children": [],
+      "role_relevance": {
+        "Software Engineer": 0.90,
+        "Data Analyst": 0.30,
+        "AI Engineer": 0.75
+      },
+      "difficulty_level": "intermediate",
+      "required_concepts": [
+        "REST",
+        "HTTP",
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE",
+        "stateless",
+        "endpoint",
+        "status code"
+      ],
+      "related_resources": [
+        "res_rest_api"
+      ],
+      "elo_rating": 1100.0
+    },
+    {
+      "id": "comp_se_version_control",
+      "name": "Version Control with Git",
+      "description": "Proficiency with Git workflows, branching strategies, and collaboration.",
+      "parent_id": "comp_se_tools",
+      "children": [],
+      "role_relevance": {
+        "Software Engineer": 0.95,
+        "Data Analyst": 0.70,
+        "AI Engineer": 0.90
+      },
+      "difficulty_level": "beginner",
+      "required_concepts": [
+        "commit",
+        "branch",
+        "merge",
+        "pull request",
+        "conflict",
+        "rebase"
+      ],
+      "related_resources": [
+        "res_git_guide"
+      ],
+      "elo_rating": 900.0
+    },
+    {
+      "id": "comp_se_behavioral",
+      "name": "Behavioral and Soft Skills",
+      "description": "Communication, teamwork, problem solving, and professional conduct in interviews.",
+      "parent_id": null,
+      "children": [],
+      "role_relevance": {
+        "Software Engineer": 0.85,
+        "Data Analyst": 0.85,
+        "AI Engineer": 0.85
+      },
+      "difficulty_level": "beginner",
+      "required_concepts": [
+        "teamwork",
+        "communication",
+        "problem solving",
+        "conflict resolution",
+        "goal",
+        "learning"
+      ],
+      "related_resources": [],
+      "elo_rating": 900.0
+    }
+  ]
+}

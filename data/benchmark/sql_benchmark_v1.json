@@ -1,0 +1,67 @@
+{
+  "benchmark_name": "SQL Benchmark v1",
+  "version": "v1",
+  "question_id": "q_da_sql_001",
+  "competency_id": "comp_da_sql",
+  "question_text": "Explain the different types of SQL JOINs and when to use each.",
+  "required_concepts": ["INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "FULL OUTER JOIN", "matching rows"],
+  "sample_answer": "SQL JOINs combine rows from two or more tables. INNER JOIN returns only rows where there is a match in both tables. LEFT JOIN returns all rows from the left table and matching rows from the right table, with NULLs for no match. RIGHT JOIN returns all rows from the right table and matching rows from the left. FULL OUTER JOIN returns all rows from both tables with NULLs where there is no match.",
+  "answers": [
+    {
+      "id": "bench_sql_excellent_01",
+      "answer_type": "excellent",
+      "answer_text": "SQL JOINs combine rows from multiple tables based on a related column. INNER JOIN returns only rows where there is a match in both tables. For example, SELECT * FROM orders INNER JOIN customers ON orders.customer_id = customers.id would return only orders that have matching customer records. LEFT JOIN returns all rows from the left table and matching rows from the right table. Where there is no match, the right side columns are filled with NULLs. This is useful when you want all records from the primary table regardless of whether a match exists. For instance, I used LEFT JOIN in a project to find customers who had not placed any orders by checking WHERE orders.id IS NULL. RIGHT JOIN is the mirror of LEFT JOIN, returning all rows from the right table. FULL OUTER JOIN returns all rows from both tables, with NULLs where there is no match on either side. CROSS JOIN produces the cartesian product. In practice I use INNER JOIN most frequently for standard lookups and LEFT JOIN when I need to include unmatched records. Performance-wise, INNER JOINs are generally faster because they produce fewer rows.",
+      "human_score": 94,
+      "annotator_notes": "Complete coverage of all JOIN types with SQL examples, practical use cases from experience, and performance insight. Excellent causal reasoning."
+    },
+    {
+      "id": "bench_sql_good_01",
+      "answer_type": "good",
+      "answer_text": "There are several types of SQL JOINs. INNER JOIN gives you only the matching rows from both tables. LEFT JOIN gives all rows from the left table and matching rows from the right, with NULL for non-matches. RIGHT JOIN is the opposite, giving all rows from the right table. FULL OUTER JOIN gives all rows from both tables. You use INNER JOIN when you want only matching data and LEFT JOIN when you want to keep all records from one table even if there is no match in the other.",
+      "human_score": 70,
+      "annotator_notes": "All major JOIN types covered with correct explanations. When-to-use guidance provided. Missing SQL examples and real-world experience."
+    },
+    {
+      "id": "bench_sql_average_01",
+      "answer_type": "average",
+      "answer_text": "JOIN is used to combine tables in SQL. INNER JOIN returns matching rows. LEFT JOIN returns all rows from the left table. There is also RIGHT JOIN and FULL JOIN. You need a condition to join tables using ON.",
+      "human_score": 45,
+      "annotator_notes": "Mentions JOIN types but explanations are minimal. No examples, no use cases, no depth. Shows basic awareness without understanding."
+    },
+    {
+      "id": "bench_sql_poor_01",
+      "answer_type": "poor",
+      "answer_text": "SQL has different commands like SELECT, INSERT, and JOIN. JOIN connects tables together. I think there are different types but I am not sure of the exact differences.",
+      "human_score": 14,
+      "annotator_notes": "Does not explain any specific JOIN type. Shows awareness that JOINs exist but cannot differentiate them. No required concepts covered beyond 'JOIN'."
+    },
+    {
+      "id": "bench_sql_excellent_02",
+      "answer_type": "excellent",
+      "answer_text": "SQL provides several JOIN operations to combine data from multiple tables. INNER JOIN is the most common and returns only rows where the join condition is satisfied in both tables. This is ideal when you need matching records only, for example getting order details with customer names. LEFT JOIN (or LEFT OUTER JOIN) returns all rows from the left table plus matched rows from the right table. Unmatched right-side rows appear as NULLs. I frequently use this in data analysis to identify missing relationships, for example finding products that have never been ordered. RIGHT JOIN is symmetrical to LEFT JOIN, returning all rows from the right table. In practice most analysts prefer LEFT JOIN and simply swap table order. FULL OUTER JOIN combines both sides, returning all rows from both tables with NULLs where no match exists. This is useful for reconciliation tasks, for example comparing two data sources to find discrepancies. Additionally, CROSS JOIN produces every combination of rows from both tables, which is useful for generating test data or creating date dimension tables. When choosing between JOINs, I consider whether I need all records from one side (LEFT/RIGHT), only matching records (INNER), or complete visibility (FULL OUTER).",
+      "human_score": 96,
+      "annotator_notes": "Comprehensive coverage with practical examples from data analysis work. Clear decision framework for choosing JOIN type. Outstanding structure."
+    },
+    {
+      "id": "bench_sql_good_02",
+      "answer_type": "good",
+      "answer_text": "The main types of JOINs are INNER JOIN which returns only matching rows, LEFT JOIN which returns all from the left and matching from the right, RIGHT JOIN which is the opposite, and FULL OUTER JOIN which returns everything from both tables. CROSS JOIN gives the cartesian product. When I need to check for missing records I use LEFT JOIN with a WHERE NULL check on the right table.",
+      "human_score": 73,
+      "annotator_notes": "Good coverage including CROSS JOIN. Has one practical use case. Could use more depth and examples."
+    },
+    {
+      "id": "bench_sql_average_02",
+      "answer_type": "average",
+      "answer_text": "INNER JOIN gets matching rows from two tables. LEFT JOIN gets everything from the left table. I think OUTER JOIN gets everything. You use WHERE to filter after joining.",
+      "human_score": 40,
+      "annotator_notes": "Partial coverage. Missing RIGHT JOIN explanation. Vague on OUTER JOIN. No examples. Basic awareness level."
+    },
+    {
+      "id": "bench_sql_poor_02",
+      "answer_type": "poor",
+      "answer_text": "I use JOIN to connect two tables. Usually I write SELECT with JOIN and ON. I mostly use basic queries.",
+      "human_score": 10,
+      "annotator_notes": "No specific JOIN types mentioned. Shows syntax awareness but zero conceptual understanding of differences."
+    }
+  ]
+}

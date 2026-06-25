@@ -1,0 +1,151 @@
+{
+  "role": "AI Engineer",
+  "version": "v1",
+  "competencies": [
+    {
+      "id": "comp_ai_ml_fundamentals",
+      "name": "Machine Learning Fundamentals",
+      "description": "Core ML concepts including supervised, unsupervised learning, model training and evaluation.",
+      "parent_id": null,
+      "children": [
+        "comp_ai_supervised",
+        "comp_ai_unsupervised",
+        "comp_ai_model_evaluation"
+      ],
+      "role_relevance": {
+        "AI Engineer": 0.98,
+        "Data Analyst": 0.70,
+        "Software Engineer": 0.40
+      },
+      "difficulty_level": "intermediate",
+      "required_concepts": [
+        "supervised learning",
+        "unsupervised learning",
+        "training",
+        "validation",
+        "test set",
+        "overfitting",
+        "underfitting",
+        "bias",
+        "variance"
+      ],
+      "related_resources": [
+        "res_ml_course",
+        "res_sklearn_docs"
+      ],
+      "elo_rating": 1300.0
+    },
+    {
+      "id": "comp_ai_deep_learning",
+      "name": "Deep Learning",
+      "description": "Understanding of neural networks, backpropagation, and deep learning architectures.",
+      "parent_id": null,
+      "children": [
+        "comp_ai_neural_networks",
+        "comp_ai_cnn",
+        "comp_ai_rnn"
+      ],
+      "role_relevance": {
+        "AI Engineer": 0.95,
+        "Data Analyst": 0.40,
+        "Software Engineer": 0.30
+      },
+      "difficulty_level": "advanced",
+      "required_concepts": [
+        "neural network",
+        "layer",
+        "neuron",
+        "activation function",
+        "backpropagation",
+        "gradient descent",
+        "loss function",
+        "epoch"
+      ],
+      "related_resources": [
+        "res_deep_learning_book",
+        "res_fastai"
+      ],
+      "elo_rating": 1500.0
+    },
+    {
+      "id": "comp_ai_nlp",
+      "name": "Natural Language Processing",
+      "description": "Understanding of NLP techniques for text processing, embeddings, and language models.",
+      "parent_id": null,
+      "children": [],
+      "role_relevance": {
+        "AI Engineer": 0.90,
+        "Data Analyst": 0.50,
+        "Software Engineer": 0.25
+      },
+      "difficulty_level": "advanced",
+      "required_concepts": [
+        "tokenization",
+        "embedding",
+        "transformer",
+        "attention",
+        "BERT",
+        "NER",
+        "sentiment analysis"
+      ],
+      "related_resources": [
+        "res_huggingface_docs"
+      ],
+      "elo_rating": 1500.0
+    },
+    {
+      "id": "comp_ai_model_evaluation",
+      "name": "Model Evaluation and Metrics",
+      "description": "Ability to choose appropriate evaluation metrics and interpret model performance.",
+      "parent_id": "comp_ai_ml_fundamentals",
+      "children": [],
+      "role_relevance": {
+        "AI Engineer": 0.95,
+        "Data Analyst": 0.75,
+        "Software Engineer": 0.30
+      },
+      "difficulty_level": "intermediate",
+      "required_concepts": [
+        "accuracy",
+        "precision",
+        "recall",
+        "F1 score",
+        "ROC",
+        "AUC",
+        "confusion matrix",
+        "cross-validation"
+      ],
+      "related_resources": [
+        "res_sklearn_docs"
+      ],
+      "elo_rating": 1200.0
+    },
+    {
+      "id": "comp_ai_overfitting",
+      "name": "Overfitting and Regularization",
+      "description": "Understanding of overfitting causes and regularization techniques to prevent it.",
+      "parent_id": "comp_ai_ml_fundamentals",
+      "children": [],
+      "role_relevance": {
+        "AI Engineer": 0.95,
+        "Data Analyst": 0.60,
+        "Software Engineer": 0.25
+      },
+      "difficulty_level": "intermediate",
+      "required_concepts": [
+        "overfitting",
+        "underfitting",
+        "regularization",
+        "dropout",
+        "L1",
+        "L2",
+        "cross-validation",
+        "early stopping"
+      ],
+      "related_resources": [
+        "res_ml_course"
+      ],
+      "elo_rating": 1300.0
+    }
+  ]
+}

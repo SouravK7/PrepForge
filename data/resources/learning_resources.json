@@ -1,0 +1,185 @@
+{
+  "version": "v1",
+  "resources": [
+    {
+      "id": "res_python_oop",
+      "title": "Python OOP Official Documentation",
+      "url": "https://docs.python.org/3/tutorial/classes.html",
+      "resource_type": "documentation",
+      "difficulty": "beginner",
+      "competency_ids": ["comp_se_oop"],
+      "description": "Official Python tutorial covering classes, inheritance, and OOP concepts."
+    },
+    {
+      "id": "res_design_patterns",
+      "title": "Refactoring Guru - Design Patterns",
+      "url": "https://refactoring.guru/design-patterns",
+      "resource_type": "article",
+      "difficulty": "intermediate",
+      "competency_ids": ["comp_se_oop", "comp_se_system_design"],
+      "description": "Comprehensive guide to design patterns with visual examples."
+    },
+    {
+      "id": "res_dsa_course",
+      "title": "Data Structures and Algorithms - GeeksForGeeks",
+      "url": "https://www.geeksforgeeks.org/data-structures/",
+      "resource_type": "course",
+      "difficulty": "intermediate",
+      "competency_ids": ["comp_se_data_structures", "comp_se_algorithms"],
+      "description": "Complete DSA coverage with explanations and practice problems."
+    },
+    {
+      "id": "res_leetcode",
+      "title": "LeetCode - Coding Practice",
+      "url": "https://leetcode.com",
+      "resource_type": "practice",
+      "difficulty": "intermediate",
+      "competency_ids": ["comp_se_data_structures", "comp_se_algorithms"],
+      "description": "Industry standard coding practice platform with thousands of problems."
+    },
+    {
+      "id": "res_sql_course",
+      "title": "SQLZoo - Interactive SQL Tutorial",
+      "url": "https://sqlzoo.net",
+      "resource_type": "course",
+      "difficulty": "beginner",
+      "competency_ids": ["comp_se_databases", "comp_da_sql"],
+      "description": "Interactive SQL exercises from basic SELECT to advanced JOINs and subqueries."
+    },
+    {
+      "id": "res_sql_practice",
+      "title": "HackerRank SQL Challenges",
+      "url": "https://www.hackerrank.com/domains/sql",
+      "resource_type": "practice",
+      "difficulty": "intermediate",
+      "competency_ids": ["comp_da_sql"],
+      "description": "SQL challenge problems organized by difficulty and topic."
+    },
+    {
+      "id": "res_database_design",
+      "title": "Database Design Tutorial - Lucidchart",
+      "url": "https://www.lucidchart.com/pages/database-diagram/database-design",
+      "resource_type": "article",
+      "difficulty": "intermediate",
+      "competency_ids": ["comp_se_databases"],
+      "description": "Visual guide to database design including ER diagrams and normalization."
+    },
+    {
+      "id": "res_system_design",
+      "title": "System Design Primer - GitHub",
+      "url": "https://github.com/donnemartin/system-design-primer",
+      "resource_type": "course",
+      "difficulty": "advanced",
+      "competency_ids": ["comp_se_system_design"],
+      "description": "Comprehensive guide to system design interview preparation with diagrams."
+    },
+    {
+      "id": "res_rest_api",
+      "title": "RESTful API Design - Best Practices",
+      "url": "https://restfulapi.net",
+      "resource_type": "documentation",
+      "difficulty": "intermediate",
+      "competency_ids": ["comp_se_rest_api"],
+      "description": "Complete reference for REST API design principles and best practices."
+    },
+    {
+      "id": "res_git_guide",
+      "title": "Pro Git Book",
+      "url": "https://git-scm.com/book/en/v2",
+      "resource_type": "documentation",
+      "difficulty": "beginner",
+      "competency_ids": ["comp_se_version_control"],
+      "description": "Free comprehensive Git book covering fundamentals to advanced workflows."
+    },
+    {
+      "id": "res_statistics_course",
+      "title": "Khan Academy - Statistics and Probability",
+      "url": "https://www.khanacademy.org/math/statistics-probability",
+      "resource_type": "course",
+      "difficulty": "beginner",
+      "competency_ids": ["comp_da_statistics"],
+      "description": "Free video course covering descriptive and inferential statistics."
+    },
+    {
+      "id": "res_pandas_docs",
+      "title": "Pandas Official Documentation",
+      "url": "https://pandas.pydata.org/docs/",
+      "resource_type": "documentation",
+      "difficulty": "intermediate",
+      "competency_ids": ["comp_da_eda", "comp_da_python"],
+      "description": "Official pandas documentation with tutorials and API reference."
+    },
+    {
+      "id": "res_kaggle_courses",
+      "title": "Kaggle Learn - Data Science Courses",
+      "url": "https://www.kaggle.com/learn",
+      "resource_type": "course",
+      "difficulty": "beginner",
+      "competency_ids": ["comp_da_eda", "comp_da_python", "comp_da_visualization"],
+      "description": "Free hands-on micro-courses for Python, Pandas, and data visualization."
+    },
+    {
+      "id": "res_matplotlib_docs",
+      "title": "Matplotlib Official Documentation",
+      "url": "https://matplotlib.org/stable/tutorials/index.html",
+      "resource_type": "documentation",
+      "difficulty": "beginner",
+      "competency_ids": ["comp_da_visualization"],
+      "description": "Official matplotlib tutorials for creating static and animated visualizations."
+    },
+    {
+      "id": "res_plotly_docs",
+      "title": "Plotly Python Documentation",
+      "url": "https://plotly.com/python/",
+      "resource_type": "documentation",
+      "difficulty": "intermediate",
+      "competency_ids": ["comp_da_visualization"],
+      "description": "Interactive data visualization library documentation with examples."
+    },
+    {
+      "id": "res_ml_course",
+      "title": "Andrew Ng - Machine Learning Specialization",
+      "url": "https://www.coursera.org/specializations/machine-learning-introduction",
+      "resource_type": "course",
+      "difficulty": "intermediate",
+      "competency_ids": ["comp_ai_ml_fundamentals", "comp_ai_overfitting"],
+      "description": "Stanford's foundational ML course covering supervised learning, unsupervised learning, and best practices."
+    },
+    {
+      "id": "res_sklearn_docs",
+      "title": "Scikit-learn Official Documentation",
+      "url": "https://scikit-learn.org/stable/user_guide.html",
+      "resource_type": "documentation",
+      "difficulty": "intermediate",
+      "competency_ids": ["comp_ai_ml_fundamentals", "comp_ai_model_evaluation"],
+      "description": "Comprehensive guide to scikit-learn with tutorials on classification, regression, and evaluation metrics."
+    },
+    {
+      "id": "res_deep_learning_book",
+      "title": "Deep Learning Book - Goodfellow et al.",
+      "url": "https://www.deeplearningbook.org",
+      "resource_type": "documentation",
+      "difficulty": "advanced",
+      "competency_ids": ["comp_ai_deep_learning"],
+      "description": "Authoritative textbook on deep learning theory and practice, freely available online."
+    },
+    {
+      "id": "res_fastai",
+      "title": "Fast.ai - Practical Deep Learning",
+      "url": "https://course.fast.ai",
+      "resource_type": "course",
+      "difficulty": "intermediate",
+      "competency_ids": ["comp_ai_deep_learning"],
+      "description": "Top-down practical deep learning course that gets you building models fast."
+    },
+    {
+      "id": "res_huggingface_docs",
+      "title": "Hugging Face Transformers Documentation",
+      "url": "https://huggingface.co/docs/transformers",
+      "resource_type": "documentation",
+      "difficulty": "advanced",
+      "competency_ids": ["comp_ai_nlp"],
+      "description": "Official docs for the Transformers library covering BERT, GPT, and modern NLP architectures."
+    }
+  ]
+}

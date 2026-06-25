@@ -1,0 +1,67 @@
+{
+  "benchmark_name": "HR Benchmark v1",
+  "version": "v1",
+  "question_id": "q_se_hr_002",
+  "competency_id": "comp_se_behavioral",
+  "question_text": "Describe a time you faced a significant technical challenge and how you resolved it.",
+  "required_concepts": ["challenge", "problem", "solution", "result", "learning"],
+  "sample_answer": "In a university project, I was building a REST API that began returning slow responses as we added more data. I analyzed the issue using query logs and found that several database queries lacked indexes and were performing full table scans. I added appropriate indexes, rewrote two N+1 query patterns to use joins, and added Redis caching for frequently accessed data. The result was a 10x improvement in response times from 3 seconds to 300 milliseconds. This taught me to always profile before optimizing and to think about database design early in the project.",
+  "answers": [
+    {
+      "id": "bench_hr_excellent_01",
+      "answer_type": "excellent",
+      "answer_text": "In my final year project, I was building a real-time notification system for a campus event management platform using Python and FastAPI. The challenge was that as we scaled to 500 concurrent users during a university event, the WebSocket connections would drop and the server would run out of memory. I first investigated by profiling the application and discovered that each WebSocket connection was spawning a separate background task that was never cleaned up. I researched connection pooling patterns and implemented a shared message broker using Redis Pub/Sub instead of individual tasks per connection. I also added connection lifecycle management with proper cleanup on disconnect. The result was that memory usage dropped by 80% and we successfully handled 2000 concurrent users during the next event with zero dropped connections. This experience taught me to always think about resource cleanup in long-lived connections and to profile before optimizing. It also taught me the value of message broker patterns for scaling real-time applications.",
+      "human_score": 95,
+      "annotator_notes": "Exemplary STAR format. Specific situation with measurable scale. Clear problem identification with profiling evidence. Concrete technical solution. Quantified results. Multiple learning takeaways. Shows genuine experience."
+    },
+    {
+      "id": "bench_hr_good_01",
+      "answer_type": "good",
+      "answer_text": "I was working on a group project where we were building a web application. The problem was that the database queries were very slow when we had a lot of data. I looked at the queries and found that some were doing full table scans. I added indexes to the database tables and optimized a few queries. After that the application was much faster. I learned that database optimization is important and should be done early.",
+      "human_score": 65,
+      "annotator_notes": "Has STAR structure with situation, problem, action, and result. But details are vague. No specific numbers, no named technologies, learning is generic. Decent but not memorable."
+    },
+    {
+      "id": "bench_hr_average_01",
+      "answer_type": "average",
+      "answer_text": "I had a challenge in a project where something was not working properly. I spent time debugging and eventually fixed the issue. It was a learning experience because I understood the importance of testing and debugging.",
+      "human_score": 30,
+      "annotator_notes": "Extremely vague. No specific challenge, no specific solution, no measurable result. Uses generic language that could apply to any situation. No evidence of real experience."
+    },
+    {
+      "id": "bench_hr_poor_01",
+      "answer_type": "poor",
+      "answer_text": "I usually fix bugs quickly. I am good at debugging.",
+      "human_score": 10,
+      "annotator_notes": "Does not answer the question at all. No specific situation, no challenge described. Self-assessment without evidence. Fails to demonstrate STAR method."
+    },
+    {
+      "id": "bench_hr_excellent_02",
+      "answer_type": "excellent",
+      "answer_text": "During an internship at a fintech startup, I was tasked with migrating a legacy payment processing system from a monolithic architecture to microservices. The challenge was that the existing codebase had no tests and the payment logic was deeply coupled with the user management module. Changing one thing would break the other. My approach was systematic: first, I wrote characterization tests to document the existing behavior before changing anything. Then I identified the boundaries between payment and user concerns using dependency analysis. I extracted the payment logic into a separate service with its own database, communicating via REST APIs. The critical challenge was handling in-flight transactions during the migration, which I solved by implementing a dual-write pattern with a reconciliation job. The result was a successful migration completed over 3 weeks with zero downtime and zero lost transactions. Processing time improved by 40% because the payment service could now scale independently. This taught me that the hardest part of engineering is not writing new code but safely changing existing systems, and that investing in tests before refactoring pays for itself many times over.",
+      "human_score": 97,
+      "annotator_notes": "Outstanding answer with specific company context, technical depth, systematic approach, risk mitigation strategy, quantified results, and profound learning insight. Shows senior-level thinking."
+    },
+    {
+      "id": "bench_hr_good_02",
+      "answer_type": "good",
+      "answer_text": "In a college project I had a problem where the machine learning model I trained had very low accuracy on test data even though training accuracy was high. I realized the model was overfitting. I tried several approaches including adding dropout layers, using cross-validation, and collecting more training data through data augmentation. After these changes, test accuracy improved from 65% to 88%. This taught me to always split data properly and monitor for overfitting during training.",
+      "human_score": 72,
+      "annotator_notes": "Good STAR structure with specific technical details. Has measurable result (65% to 88%). Learning is specific and relevant. Could benefit from more context about the project and why the approach was chosen."
+    },
+    {
+      "id": "bench_hr_average_02",
+      "answer_type": "average",
+      "answer_text": "I once had a bug in my code that took a long time to fix. I tried different things and eventually found the problem was a typo in a variable name. After fixing it everything worked. I learned to be more careful when writing code.",
+      "human_score": 28,
+      "annotator_notes": "Has a structure but the challenge is trivial (a typo). Does not demonstrate significant problem-solving ability. Learning is superficial. Would not impress an interviewer."
+    },
+    {
+      "id": "bench_hr_poor_02",
+      "answer_type": "poor",
+      "answer_text": "I have not really faced any major technical challenges yet. I am a quick learner though.",
+      "human_score": 8,
+      "annotator_notes": "Does not answer the question. No situation, no challenge, no solution. Self-assessment claim without evidence. Shows lack of preparation."
+    }
+  ]
+}

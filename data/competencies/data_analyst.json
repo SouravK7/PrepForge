@@ -1,0 +1,146 @@
+{
+  "role": "Data Analyst",
+  "version": "v1",
+  "competencies": [
+    {
+      "id": "comp_da_sql",
+      "name": "SQL for Data Analysis",
+      "description": "Advanced SQL skills for data extraction, transformation, and analysis.",
+      "parent_id": null,
+      "children": [
+        "comp_da_sql_joins",
+        "comp_da_sql_aggregations",
+        "comp_da_sql_window_functions"
+      ],
+      "role_relevance": {
+        "Data Analyst": 0.98,
+        "Software Engineer": 0.70,
+        "AI Engineer": 0.65
+      },
+      "difficulty_level": "intermediate",
+      "required_concepts": [
+        "SELECT",
+        "JOIN",
+        "GROUP BY",
+        "WHERE",
+        "HAVING",
+        "subquery",
+        "aggregate function"
+      ],
+      "related_resources": [
+        "res_sql_course",
+        "res_sql_practice"
+      ],
+      "elo_rating": 1200.0
+    },
+    {
+      "id": "comp_da_statistics",
+      "name": "Statistical Analysis",
+      "description": "Understanding of descriptive and inferential statistics for data interpretation.",
+      "parent_id": null,
+      "children": [],
+      "role_relevance": {
+        "Data Analyst": 0.95,
+        "AI Engineer": 0.80,
+        "Software Engineer": 0.30
+      },
+      "difficulty_level": "intermediate",
+      "required_concepts": [
+        "mean",
+        "median",
+        "mode",
+        "standard deviation",
+        "variance",
+        "correlation",
+        "hypothesis testing",
+        "p-value"
+      ],
+      "related_resources": [
+        "res_statistics_course"
+      ],
+      "elo_rating": 1200.0
+    },
+    {
+      "id": "comp_da_eda",
+      "name": "Exploratory Data Analysis",
+      "description": "Skills in exploring datasets to understand distributions, outliers, and patterns.",
+      "parent_id": null,
+      "children": [],
+      "role_relevance": {
+        "Data Analyst": 0.98,
+        "AI Engineer": 0.85,
+        "Software Engineer": 0.25
+      },
+      "difficulty_level": "intermediate",
+      "required_concepts": [
+        "distribution",
+        "outlier",
+        "histogram",
+        "correlation",
+        "missing values",
+        "data cleaning",
+        "pandas",
+        "visualization"
+      ],
+      "related_resources": [
+        "res_pandas_docs",
+        "res_kaggle_courses"
+      ],
+      "elo_rating": 1100.0
+    },
+    {
+      "id": "comp_da_visualization",
+      "name": "Data Visualization",
+      "description": "Ability to create clear, insightful visualizations for data communication.",
+      "parent_id": null,
+      "children": [],
+      "role_relevance": {
+        "Data Analyst": 0.92,
+        "AI Engineer": 0.60,
+        "Software Engineer": 0.35
+      },
+      "difficulty_level": "beginner",
+      "required_concepts": [
+        "chart",
+        "graph",
+        "dashboard",
+        "bar chart",
+        "line chart",
+        "scatter plot",
+        "matplotlib",
+        "plotly"
+      ],
+      "related_resources": [
+        "res_matplotlib_docs",
+        "res_plotly_docs"
+      ],
+      "elo_rating": 900.0
+    },
+    {
+      "id": "comp_da_python",
+      "name": "Python for Data Analysis",
+      "description": "Python programming skills focused on data manipulation and analysis.",
+      "parent_id": null,
+      "children": [],
+      "role_relevance": {
+        "Data Analyst": 0.90,
+        "AI Engineer": 0.95,
+        "Software Engineer": 0.80
+      },
+      "difficulty_level": "intermediate",
+      "required_concepts": [
+        "pandas",
+        "numpy",
+        "dataframe",
+        "series",
+        "groupby",
+        "merge",
+        "apply"
+      ],
+      "related_resources": [
+        "res_pandas_docs"
+      ],
+      "elo_rating": 1100.0
+    }
+  ]
+}
