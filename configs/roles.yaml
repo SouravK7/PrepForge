@@ -1,0 +1,34 @@
+roles:
+  - id: "software_engineer"
+    display_name: "Software Engineer"
+    competency_file: "software_engineer.json"
+    question_file: "software_engineer.json"
+    core_competencies:
+      - "comp_oop"
+      - "comp_data_structures"
+      - "comp_algorithms"
+      - "comp_databases"
+      - "comp_system_design"
+      - "comp_rest_api"
+
+  - id: "data_analyst"
+    display_name: "Data Analyst"
+    competency_file: "data_analyst.json"
+    question_file: "data_analyst.json"
+    core_competencies:
+      - "comp_sql"
+      - "comp_statistics"
+      - "comp_eda"
+      - "comp_visualization"
+      - "comp_python_data"
+
+  - id: "ai_engineer"
+    display_name: "AI Engineer"
+    competency_file: "ai_engineer.json"
+    question_file: "ai_engineer.json"
+    core_competencies:
+      - "comp_ml_fundamentals"
+      - "comp_deep_learning"
+      - "comp_nlp"
+      - "comp_model_evaluation"
+      - "comp_python_ml"

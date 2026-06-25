@@ -1,0 +1,35 @@
+# Competency ontology configuration.
+# Full competency definitions live in data/competencies/*.json
+# This file defines global ontology metadata and normalization aliases.
+
+ontology:
+  version: "v1"
+  description: "Competency ontology for AI Interview Assistant"
+
+normalization_aliases:
+  "oop": "comp_oop"
+  "object oriented": "comp_oop"
+  "object-oriented programming": "comp_oop"
+  "data structures": "comp_data_structures"
+  "algorithms": "comp_algorithms"
+  "sql": "comp_sql"
+  "databases": "comp_databases"
+  "machine learning": "comp_ml_fundamentals"
+  "deep learning": "comp_deep_learning"
+  "nlp": "comp_nlp"
+  "natural language processing": "comp_nlp"
+  "system design": "comp_system_design"
+  "rest api": "comp_rest_api"
+  "restful api": "comp_rest_api"
+  "statistics": "comp_statistics"
+  "data visualization": "comp_visualization"
+  "python": "comp_python_ml"
+  "exploratory data analysis": "comp_eda"
+  "eda": "comp_eda"
+  "model evaluation": "comp_model_evaluation"
+
+difficulty_levels:
+  - beginner
+  - intermediate
+  - advanced
+  - expert

@@ -1,0 +1,24 @@
+# Rubric registry.
+# Maps rubric IDs to their types.
+# Full rubric definitions live in data/rubrics/*.json
+
+rubrics:
+  - id: "rubric_technical_standard"
+    name: "Standard Technical Rubric"
+    type: "technical"
+    file: "technical_rubrics.json"
+    description: >
+      Used for core technical questions covering concepts,
+      reasoning, and evidence.
+
+  - id: "rubric_hr_standard"
+    name: "Standard HR Rubric"
+    type: "hr"
+    file: "hr_rubrics.json"
+    description: >
+      Used for behavioral and motivational questions focusing
+      on communication, evidence, and self-awareness.
+
+default_rubrics:
+  technical: "rubric_technical_standard"
+  hr: "rubric_hr_standard"

@@ -1,0 +1,26 @@
+technical:
+  concept: 0.35
+  semantic: 0.20
+  reasoning: 0.20
+  evidence: 0.15
+  communication: 0.10
+
+hr:
+  semantic: 0.25
+  communication: 0.25
+  evidence: 0.25
+  reasoning: 0.15
+  concept: 0.10
+
+grades:
+  A: 90
+  B: 75
+  C: 60
+  D: 40
+  F: 0
+
+readiness:
+  excellent: 85
+  good: 70
+  average: 50
+  poor: 0

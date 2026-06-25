@@ -1,0 +1,42 @@
+app:
+  name: "AI Interview Assistant"
+  version: "1.0.0"
+  debug: true
+
+interview:
+  default_questions_per_session: 10
+  technical_ratio: 0.6
+  hr_ratio: 0.4
+  min_answer_length_words: 10
+  max_answer_length_words: 500
+
+competency:
+  learning_rate: 0.3
+  min_confidence: 0.0
+  max_confidence: 1.0
+  readiness_threshold: 0.7
+
+elo:
+  k_factor: 32
+  default_user_rating: 1000.0
+  beginner_question_rating: 900.0
+  intermediate_question_rating: 1200.0
+  advanced_question_rating: 1500.0
+  expert_question_rating: 1800.0
+  advanced_threshold: 1400.0
+  intermediate_threshold: 1100.0
+
+skill_gap:
+  high_priority_threshold: 0.4
+  medium_priority_threshold: 0.2
+
+logging:
+  level: "INFO"
+  file: "logs/ai_decisions.log"
+  max_bytes: 10485760
+  backup_count: 5
+
+data:
+  version: "v1"
+  benchmark_version: "v1"
+  model_version: "1.0.0"
