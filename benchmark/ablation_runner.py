@@ -306,35 +306,35 @@ class AblationRunner:
             else QuestionType.TECHNICAL
         )
 
-        for question_data in raw_data["questions"]:
-            question_id = question_data["question_id"]
-            question_text = question_data["question_text"]
-            required_concepts = question_data["required_concepts"]
+        question_id = raw_data["question_id"]
+        question_text = raw_data["question_text"]
+        required_concepts = raw_data["required_concepts"]
 
-            # Get sample answer (excellent or explicit)
-            sample_answer = self._get_sample_answer(question_data)
+        # Get sample answer (excellent or explicit)
+        sample_answer = self._get_sample_answer(raw_data)
 
-            for answer_data in question_data["answers"]:
-                answer_input = AnswerInput(
-                    session_id=0,
-                    user_id=0,
-                    question_id=question_id,
-                    competency_id=competency_id,
-                    question_text=question_text,
-                    question_type=q_type,
-                    sample_answer=sample_answer,
-                    required_concepts=required_concepts,
-                    optional_concepts=[],
-                    rubric_id=(
-                        "rubric_hr_standard"
-                        if q_type == QuestionType.HR
-                        else "rubric_technical_standard"
-                    ),
-                    user_answer=answer_data["text"],
-                )
+        for answer_data in raw_data["answers"]:
+            answer_text = answer_data.get("text", answer_data.get("answer_text", ""))
+            answer_input = AnswerInput(
+                session_id=0,
+                user_id=0,
+                question_id=question_id,
+                competency_id=competency_id,
+                question_text=question_text,
+                question_type=q_type,
+                sample_answer=sample_answer,
+                required_concepts=required_concepts,
+                optional_concepts=[],
+                rubric_id=(
+                    "rubric_hr_standard"
+                    if q_type == QuestionType.HR
+                    else "rubric_technical_standard"
+                ),
+                user_answer=answer_text,
+            )
 
-                answer_inputs.append((answer_input, question_data))
-                human_scores.append(answer_data["human_score"])
+            answer_inputs.append((answer_input, raw_data))
+            human_scores.append(answer_data["human_score"])
 
         return answer_inputs, human_scores
 

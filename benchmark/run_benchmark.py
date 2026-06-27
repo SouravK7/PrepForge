@@ -146,9 +146,9 @@ class BenchmarkRunner:
                 human_scores.append(human_score)
                 ai_scores.append(ai_score)
 
-                status = "✓" if result.absolute_error <= 15 else "✗"
+                status = "[OK]" if result.absolute_error <= 15 else "[FAIL]"
                 print(
-                    f"  [{status}] {answer_type:12s} | "
+                    f"  {status} {answer_type:12s} | "
                     f"Human: {human_score:5.1f} | "
                     f"AI: {ai_score:5.1f} | "
                     f"Error: {result.absolute_error:5.1f}"
@@ -270,8 +270,8 @@ class BenchmarkRunner:
             "success_criteria", "evaluator.full_ensemble_mae", 12.0
         )
 
-        pearson_status = "✓ PASS" if report.pearson_r >= target_pearson else "✗ BELOW TARGET"
-        mae_status = "✓ PASS" if report.mae <= target_mae else "✗ ABOVE TARGET"
+        pearson_status = "[PASS]" if report.pearson_r >= target_pearson else "[BELOW TARGET]"
+        mae_status = "[PASS]" if report.mae <= target_mae else "[ABOVE TARGET]"
 
         print(f"\n  Pearson R target ({target_pearson}): {pearson_status}")
         print(f"  MAE target ({target_mae}):        {mae_status}")
