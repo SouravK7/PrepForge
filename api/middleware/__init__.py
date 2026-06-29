@@ -1,1 +1,1 @@
-﻿"""Package initialization."""
+"""API middleware package."""
